@@ -15,6 +15,62 @@ body{
     gap:8px;
     height:100vh;
 }
-th{  
+table,
+th,
+td{  
     border: 1px solid black;
+}
+
+th{
+    padding-left : 16px ;
+    padding-right : 16px ;
+}
+
+dialog{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+}
+
+.new-book-modal,
+.title-field,
+.pages-field,
+.author-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.new-book-modal{
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+}
+
+.title-field,
+.author-field,
+.pages-field{
+    gap:4px;
+}
+.read-field{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:8px;
+}
+#title,
+#author,
+#pages{
+    width: 240px;
+    height: 24px;
+    padding-left: 4px;
+    border:1px solid green;
+    border-radius: 4px;
+    outline: none;
+}
+#title:focus,
+#author:focus,
+#pages:focus{
+    border: 1px solid blue;
 }
