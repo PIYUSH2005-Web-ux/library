@@ -4,10 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>library</title>
+    <link rel="stylesheet" href="lib.css">
     <script src="lib.js " defer></script>
-    <link rel="stylesheet" src="lib.css">
 </head>
 <body>
-    
+    <div class="library">
+    <h1>Library</h1>
+    <table>
+        <thead>
+            <th>title</th>
+            <th>author</th>
+            <th>pages</th>
+            <th>read status</th>
+            <th>actions</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <button class="new_book">New book</button>
+</div>
+<dialog>
+    <div class="new-book-modal">
+        <h1>New book</h1>
+        <form>
+    <div class="title-field">
+        <label for="title">title</label>
+        <input type="text" id="title" name="title">
+    </div>
+    <div class="author-field">
+        <label for="author">Author</label>
+        <input type="text" id="author" name="Author">
+    </div>
+    <div class="pages-field">
+        <label for="pages">Pages</label>
+        <input type="number" id="pages" name="pages">
+    </div>
+    <div class="read-field">
+        <label for="read">read status</label>
+        <input type="text" id="read" name="read">
+    </div>
+    <div class="action-field">
+        <label for="action">Actions</label>
+            <input type="text" id="action" name="action">
+        </div>
+        <div class="buttons">
+            <button type="submit" class="submit-button">Add a new book</button>
+            <button type="button" class="cancel-button">cancel</button>
+        </div>
+        </form>
+    </div>
+
+</dialog>
+
+
 </body>
 </html>
